@@ -1,0 +1,64 @@
+* {
+    font-family: "Montserrat", sans-serif !important;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    max-width: 100vw !important;
+}
+
+.introducao { 
+    background-image: url(/geminidev/eslcologne.jpeg);
+    background-repeat: round;
+    height: 90vh !important;
+    display: flex;
+}
+
+.hist {
+    color: #fff;
+    text-align: center;
+    background-color: #000;
+    font-size: 60px;
+    margin: auto;
+    width: 25%;
+}
+
+.alt {
+    color: #fff;
+    position: absolute;
+    margin-top: 0;
+    margin-bottom: 0;
+    bottom: 2vh;
+    right: 2vw;
+    font-size: 15px;
+}
+
+.header {
+    background-color: #000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 10vh;
+}
+
+.box-h4 {
+    color: #fff;
+    background: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: background-color 0.5s;
+    width: 100%;
+    height: 55px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #000;
+}
+
+.box-h4:hover {
+    background-color: #fff;
+    color: #000;
+}
