@@ -15,6 +15,13 @@
     display: flex;
 }
 
+.csgo { 
+    background-image: url(/geminidev/csgo_bg.jpeg);
+    background-repeat: round;
+    height: 100vh !important;
+    display: flex;
+}
+
 .hist {
     color: #fff;
     text-align: center;
@@ -61,4 +68,17 @@
 .box-h4:hover {
     background-color: #fff;
     color: #000;
+}
+
+.title {
+    background: #000;
+    color: #fff;
+    font-size: 36px;
+    height: fit-content;
+    padding: 0px 25px;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 12vh;
+    border: 1px solid #fff;
 }
