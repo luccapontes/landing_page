@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    font-size: 62.5%;
+    --font-default: 'Montserrat';
+    --font-heading: 'Poppins';
+    --color-default: #FFF;
+    --color-secundary: #000;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-default);
+}
+
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 2.4rem;
+    width: 2.4rem;
+    position: fixed;
+    right: 2rem;
+    top: 2rem;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.linha {
+    height: .5rem;
+    width: 100%;
+    background-color: white;
+    box-shadow: 2px 2px 2px #000;
+
+}
+
+.menu {
+    height: 100vh;
+    width: 20rem;
+    position: fixed;
+    right: -20rem;
+    background-color: white;
+    z-index: 9;
+    transition: right 1s;
+}
+
+.menu ul {
+    list-style: none;
+}
+
+.show-menu {
+    right: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100vh;
+    background-size: cover;
+    background-image: url('/assets/images/hero.jpg');
+    color: var(--color-default);
+    padding: 21rem 11rem;
+    gap: 2rem;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 900;
+    font-family: var(--font-heading);
+}
+
+h1 {
+    font-size: 6rem;
+}
+
+h2 {
+    font-size: 4.4rem;
+}
+
+p {
+    font-size: 3rem;
+}
+
+span {
+    font-size: 4.5rem;
+}
+
+section {
+    padding: 8.6rem;
+}
+
+.botao {
+    padding: 1.4rem 11rem;
+    font-size: 3rem;
+    color: var(--color-default);
+    background: linear-gradient(270deg, #41295a 0%, rgba(20, 30, 48, 0) 0%, #0F0C29 0.01%, #2F0743 50.52%);
+    border-radius: 125px;
+    text-decoration: none;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+
+#secao-jogos {
+    background-color: var(--color-secundary);
+    color: var(--color-default);
+}
+
+#secao-jogos ul {
+    display: flex;
+    gap: 3rem;
+    justify-content: space-around;
+    list-style: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card {
+    position: relative;
+    cursor: pointer;
+}
+
+.card-image {
+    transition: opacity 0.4s;
+    justify-content: center;
+}
+
+.card-image img {
+    height: 40rem;
+    width: 80rem;
+    border-radius: 10px;
+}
+
+.card-info {
+    z-index: 0;
+    opacity: 0%;
+}
+
+.show-history {
+    display: flex;
+    opacity: 100%;
+    background-color: pink;
+}
