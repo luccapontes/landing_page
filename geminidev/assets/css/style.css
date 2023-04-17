@@ -121,10 +121,8 @@ section {
 #secao-jogos ul {
     display: flex;
     gap: 3rem;
-    justify-content: space-around;
     list-style: none;
     flex-direction: column;
-    align-items: center;
 }
 
 .card {
@@ -132,24 +130,67 @@ section {
     cursor: pointer;
 }
 
-.card-image {
-    transition: opacity 0.4s;
-    justify-content: center;
+.card:hover .card-image {
+    opacity: 20%;
+}
+
+.card:hover .card-info {
+    opacity: 100%;
 }
 
 .card-image img {
-    height: 40rem;
-    width: 80rem;
+    height: 50%;
+    width: 50%;
     border-radius: 10px;
 }
 
-.card-info {
-    z-index: 0;
-    opacity: 0%;
+.card-image {
+    transition: opacity 0.4s;
 }
 
-.show-history {
+.card-info {
+    position: absolute;
+    bottom: 0%;
+    opacity: 0%;
+    transition: opacity 0.4s ease-in-out, bottom 0.5s;
+}
+
+#secao-orcamento {
     display: flex;
-    opacity: 100%;
-    background-color: pink;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+    background-color: var(--color-secundary);
+}
+
+#secao-orcamento form {
+    display: grid;
+    justify-items: start;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 1rem;
+    padding: 2rem;
+    background-color: #FFF;
+    border-radius: 10px;
+    position: relative;
+}
+
+
+#secao-orcamento output {
+    grid-column: 2;
+}
+
+#secao-orcamento h3 {
+    background-color: rgb(72, 0, 241);
+    top: -10%;
+    /*border-radius: 10px;*/
+    color: #FFF;
+    position: absolute;
+}
+
+input[type=number] {
+    padding: 0.5rem;
+    background-color: var(--color-secundary);
+    color: var(--color-default);
+    border: none;
 }

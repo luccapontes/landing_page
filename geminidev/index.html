@@ -79,10 +79,10 @@
             </li>
             <li class="card">
                 <div class="card-image">
-                    <img src="./assets/images/csgo_bg.jpeg" alt="cs-go">
+                    <img src="./assets/images/valorant.jpg" alt="valorant">
                 </div>
                 <div class="card-info">
-                    <h3>CS-GO</h3>
+                    <h3>Valorant</h3>
                     <h4>Lorem Ipsum</h4>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
                         Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took
@@ -97,28 +97,10 @@
             </li>
             <li class="card">
                 <div class="card-image">
-                    <img src="./assets/images/csgo_bg.jpeg" alt="cs-go">
+                    <img src="./assets/images/rainbowSixSiege.jpg" alt="rainbow-six-siege">
                 </div>
                 <div class="card-info">
-                    <h3>CS-GO</h3>
-                    <h4>Lorem Ipsum</h4>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                        Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took
-                        a galley of type and scrambled it to make a type specimen book. It has survived not only five
-                        centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was
-                        popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and
-                        more recently with desktop publishing software like Aldus PageMaker including versions of Lorem
-                        Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                        Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took
-                        a galley of type and scrambled it to make a type specimen book.</p>
-                </div>
-            </li>
-            <li class="card">
-                <div class="card-image">
-                    <img src="./assets/images/csgo_bg.jpeg" alt="cs-go">
-                </div>
-                <div class="card-info">
-                    <h3>CS-GO</h3>
+                    <h3>Rainbow Six Siege</h3>
                     <h4>Lorem Ipsum</h4>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
                         Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took
@@ -133,7 +115,34 @@
             </li>
         </ul>
     </section>
-    <script src="./assets/js/history.js"></script>
+    <section id="secao-orcamento">
+        <form action="">
+            <h3>Feedback</h3>
+            <label for="qtde-paginas">Qtde de Páginas</label>
+            <input type="number" id="qtde_paginas" min="1" value="1">
+
+            <label for="js">Precisa de JS?</label>
+            <input type="checkbox" id="js">
+
+            
+            <label for="layout">Precisa de Layout?</label>
+            <div>
+                <input type="radio" id="layout_sim" name="layout">
+                <label for="layout-sim">Sim, preciso de layout</label>
+                
+                <input type="radio" id="layout_nao" name="layout">
+                <label for="layout-nao">Não, já tenho um layout</label>
+            </div>
+
+            <label for="prazo" id="label_prazo">Prazo</label>
+            <input type="range" id="prazo" min="1" max="10">
+
+
+
+            <output id="output">R$ 100,00</output>
+        </form>
+    </section>
     <script src="./assets/js/menu.js"></script>
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>
