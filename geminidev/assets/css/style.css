@@ -46,13 +46,16 @@ body {
 }
 
 .menu {
-    height: 100vh;
+    padding: 2rem;
+    height: 30rem;
     width: 20rem;
     position: fixed;
     right: -20rem;
-    background-color: white;
+    background-color: #480c66;
     z-index: 9;
     transition: right 1s;
+    color: white;
+    border-radius: 10px;
 }
 
 .menu ul {
@@ -69,7 +72,7 @@ header {
     align-items: flex-start;
     height: 100vh;
     background-size: cover;
-    background-image: url('/assets/images/hero.jpg');
+    background-image: url('../images/hero.jpg');
     color: var(--color-default);
     padding: 21rem 11rem;
     gap: 2rem;
