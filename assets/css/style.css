@@ -98,7 +98,10 @@ p {
 }
 
 span {
-    font-size: 4.5rem;
+    font-size: 2rem;
+    position: absolute;
+    bottom: 1vh;
+    right: 5vh;
 }
 
 section {
