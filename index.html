@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <title>História dos Jogos</title>
@@ -8,14 +8,13 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
 </head>
 
 <body>
-
-    
-
     <div class="hamburger">
         <div class="linha"></div>
         <div class="linha"></div>
@@ -51,9 +50,11 @@
         <a class="botao" href="#secao-jogos">Conhecer</a>
     </header>
 
-    <section id="secao-jogos">
-        <ul>
+    <div class="slideshow-container" id="secao-jogos">
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
             <li class="card">
+
                 <div class="card-image">
                     <img src="./assets/images/csgo_bg.jpeg" alt="cs-go">
                 </div>
@@ -71,24 +72,11 @@
                         a galley of type and scrambled it to make a type specimen book.</p>
                 </div>
             </li>
-            <li class="card">
-                <div class="card-image">
-                    <img src="./assets/images/valorant.jpg" alt="valorant">
-                </div>
-                <div class="card-info">
-                    <h3>Valorant</h3>
-                    <h4>Lorem Ipsum</h4>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                        Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took
-                        a galley of type and scrambled it to make a type specimen book. It has survived not only five
-                        centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was
-                        popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and
-                        more recently with desktop publishing software like Aldus PageMaker including versions of Lorem
-                        Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                        Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took
-                        a galley of type and scrambled it to make a type specimen book.</p>
-                </div>
-            </li>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+
             <li class="card">
                 <div class="card-image">
                     <img src="./assets/images/rainbowSixSiege.jpg" alt="rainbow-six-siege">
@@ -107,8 +95,34 @@
                         a galley of type and scrambled it to make a type specimen book.</p>
                 </div>
             </li>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="img_mountains_wide.jpg" style="width:100%">
+            <div class="text">Caption Three</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <!-- <section id="secao-jogos">
+        <ul>
+            
+            
+            
         </ul>
-    </section>
+    </section> -->
+
     <section id="secao-orcamento">
         <form action="">
             <h3>Feedback</h3>
@@ -118,12 +132,12 @@
             <label for="js">Precisa de JS?</label>
             <input type="checkbox" id="js">
 
-            
+
             <label for="layout">Precisa de Layout?</label>
             <div>
                 <input type="radio" id="layout_sim" name="layout">
                 <label for="layout-sim">Sim, preciso de layout</label>
-                
+
                 <input type="radio" id="layout_nao" name="layout">
                 <label for="layout-nao">Não, já tenho um layout</label>
             </div>
@@ -138,5 +152,7 @@
     </section>
     <script src="./assets/js/menu.js"></script>
     <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/slide.js"></script>
 </body>
+
 </html>
